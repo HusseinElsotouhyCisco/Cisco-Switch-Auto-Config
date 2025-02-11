@@ -34,7 +34,7 @@ with open('devices.csv', mode='r') as file:
         print(f"\nConfiguration output for {ip}:\n{output}")
         
         #use this to save every device output in separate text files
-        #file = open(ip +'_DCN_ShowRun.txt','w')
+        #file = open(ip +'_output.txt','w')
         #file.write(output)
 
         save = device.save_config()
