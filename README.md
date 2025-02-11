@@ -71,7 +71,7 @@ Installation
 ```bash
   cd cisco-switch-config
 ```  
-4.  Edit `config.txt` to include the desired configuration for your devices.
+3.  Edit `config.txt` to include the desired configuration for your devices.
     
 
 Running the Script
