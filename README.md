@@ -63,15 +63,15 @@ Files in This Repository
 Installation
 ------------
 
-1. Clone this repository:
+### 1\. Clone this repository:
 ```bash
   clone https://github.com/yourusername/cisco-switch-config.git
 ```    
-2. Change into the project directory:
+### 2\. Change into the project directory:
 ```bash
   cd cisco-switch-config
 ```  
-3.  Edit `config.txt` to include the desired configuration for your devices.
+### 3\. Edit `config.txt` to include the desired configuration for your devices.
     
 
 Running the Script
