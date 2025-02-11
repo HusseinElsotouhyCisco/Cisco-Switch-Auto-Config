@@ -1,6 +1,6 @@
 # Cisco Switch Configuration Automation
 
-This repository contains a Python script to automate the configuration of Cisco switches and routers using the **Netmiko** library. It is designed for lab environments and has been tested on **EVE labs**.
+This repository contains a Python script to automate the configuration of Cisco switches and routers using the **Netmiko** library. It is designed for data center environments and has been tested on **EVE labs** and onsite.
 
 ## Prerequisites
 
