@@ -96,4 +96,4 @@ For more details on **Netmiko**, visit the [Netmiko Documentation](https://pypi.
 
 Developed by [Hussein Elsotouhy](https://eg.linkedin.com/in/hussein-elsotouhy-03137519b).
 
-Special thanks to [Nour Nada](http://www.linkedin.com/in/nour-mamdouh-nada-920a65191) for troubleshooting support.
+Special thanks to [Nour Nada](http://www.linkedin.com/in/nour-mamdouh-nada-920a65191) for support.
