@@ -1,0 +1,2 @@
+ip,username,password,secret,config_file
+10.1.2.3,admin,<Enter_Password>,<Enter_Enable_Password>,config.txt
