@@ -1,3 +1,16 @@
-!Example configuration
-show version 
-show inventory
+! Example configuration:
+! Any line that includes "!" is ignored by Cisco devices
+! To be adjusted based on your configuration
+! Script automatically enters config mode, thus "do" must be added for show commands
+!
+!
+do show version 
+do show inventory
+!
+! Sample of Configuration:
+!
+int Twe1/1/1
+description Example
+no shutdown
+!
+!
