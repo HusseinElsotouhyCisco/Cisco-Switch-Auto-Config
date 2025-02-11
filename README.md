@@ -22,15 +22,17 @@ Setup Instructions
   ipconfig
 ```
 
-*   Find the **"Ethernet adapter VMware Network Adapter"** and note its IPv4 subnet.
+*   Find the **"Ethernet adapter VMware Network Adapter"** and note its IPv4 subnet --For EVE Lab Testing--
+
+*   Find the Ethernet adapter connected to network, make sure it is in the same subnet as vlan assigned to switchport port --For data center/enterprise use--
     
 
 ### 2\. Configure Your Router Interface
 
-*   Assign an IP address to the router interface connected to the **management cloud** within the same subnet as the **Ethernet adapter VMware Network Adapter**, with the same subnet mask.
+*   Assign an IP address to the router interface connected to the **management cloud** within the same subnet as the **Ethernet adapter VMware Network Adapter**, with the same subnet mask. --For EVE Lab Testing--
     
 
-### 3\. Apply Router Configuration
+### 3\. Apply Router Configuration --For EVE Lab/data center/enterprise use Testing--
 
 *   Access the router console and enter the following commands:
 ```bash
@@ -38,18 +40,18 @@ conf t
 !
 hostname <your-choice-of-hostname>
 ip route 0.0.0.0 0.0.0.0 Ethernet0/0
-username cisco password cisco
+username <your-choice-of-username> password <your-choice-of-password>
 line vty 0 4
   login local
   transport input telnet ssh
 ip domain-name lab.local
 crypto key generate rsa mod 2048
 ip ssh version 2
-enable password cisco
+enable password <your-choice-of-enable-password>
 end
 copy run start
 ```
-*   Verify that you can **SSH** into the router.
+*   Verify that you can **SSH** into the router. -- Router/Switch must be reachable through SSH --
     
 
 Files in This Repository
@@ -57,7 +59,7 @@ Files in This Repository
 
 *   **config.txt** – Contains the configuration commands to be applied to multiple routers/switches.
     
-*   **automate\_config.py** – The main Python script that connects to routers and switches using Netmiko and applies configurations from config.txt.
+*   **CiscoSwitchAuto.py** – The main Python script that connects to routers and switches using Netmiko and applies configurations from config.txt.
     
 
 Installation
@@ -79,12 +81,12 @@ Running the Script
 
 To execute the script, use the following command:
 ```bash
-python automate_config.py
+python CiscoSwitchAuto.py
 ````
 
 ### Example Usage
 
-1.  **Automate Configuration**: The script connects to all routers/switches listed in `config.txt` and automatically applies the configuration.
+1.  **Automate Configuration**: The script connects to all routers/switches listed in `devices.csv` and automatically applies the configuration.
     
 2.  **Modify Configuration**: You can edit `config.txt` to add new devices or update configurations.
     
