@@ -67,7 +67,7 @@ Installation
 
 ### 1\. Clone this repository:
 ```bash
-  clone https://github.com/yourusername/cisco-switch-config.git
+  clone https://github.com/HusseinElsotouhyCisco/Cisco-Switch-Auto-Config.git
 ```    
 ### 2\. Change into the project directory:
 ```bash
