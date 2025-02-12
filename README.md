@@ -22,17 +22,17 @@ Setup Instructions
   ipconfig
 ```
 
-*   Find the **"Ethernet adapter VMware Network Adapter"** and note its IPv4 subnet --For EVE Lab Testing--
+*   Find the **"Ethernet adapter VMware Network Adapter"** and note its IPv4 subnet — for EVE lab testing.
 
-*   Find the Ethernet adapter connected to network, make sure it is in the same subnet as vlan assigned to switchport port --For data center/enterprise use--
+*   Find the Ethernet adapter connected to network, make sure it is in the same subnet as vlan assigned to switchport port — for data center/enterprise use.
     
 
 ### 2\. Configure Your Router Interface
 
-*   Assign an IP address to the router interface connected to the **management cloud** within the same subnet as the **Ethernet adapter VMware Network Adapter**, with the same subnet mask. --For EVE Lab Testing--
+*   Assign an IP address to the router interface connected to the **management cloud** within the same subnet as the **Ethernet adapter VMware Network Adapter**, with the same subnet mask — for EVE lab testing.
     
 
-### 3\. Apply Router Configuration --For EVE Lab/data center/enterprise use Testing--
+### 3\. Apply Router Configuration — For EVE Lab/Data Denter/Enterprise Use
 
 *   Access the router console and enter the following commands:
 ```bash
@@ -51,7 +51,7 @@ enable password <your-choice-of-enable-password>
 end
 copy run start
 ```
-*   Verify that you can **SSH** into the router. -- Router/Switch must be reachable through SSH --
+*   Verify that you can **SSH** into the router — router/switch must be reachable through SSH.
     
 
 Files in This Repository
@@ -71,7 +71,7 @@ Installation
 ```    
 ### 2\. Change into the project directory:
 ```bash
-  cd cisco-switch-config
+  cd cisco-switch-auto-config
 ```  
 ### 3\. Edit `config.txt` to include the desired configuration for your devices.
     
